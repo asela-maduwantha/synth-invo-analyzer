@@ -1,1 +1,1 @@
-# aynth-invo-analyzer
+# synth-invo-analyzer
