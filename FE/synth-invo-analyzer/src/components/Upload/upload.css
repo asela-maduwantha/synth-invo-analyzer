@@ -1,0 +1,61 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-text{
+    padding: 4%;
+    margin: 1%;
+}
+
+.drop-area{
+    width: 50%;
+    height:40vh;
+    border: dashed 2px #6760EF;
+    border-radius: 15px;
+    color: grey;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.drop-area img{
+    padding: 5%;
+    height: 150px;
+    width: 150px;
+}
+
+.upload-btns{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.upload-btns .btn-success{
+    margin: 5%;
+    background: #6760EF;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: max-content;
+}
+
+.upload-btn{
+    margin-left: 5%;
+}
+
+.select-btn{
+    margin-right: 5%;
+}
+
+
+.alert-box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+}
