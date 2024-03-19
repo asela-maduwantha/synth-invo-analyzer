@@ -1,0 +1,150 @@
+.sign{
+    width: 450px;
+    height: 900px;
+    background-color:#FFFFFF;
+    color:black ;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 100px;
+    
+}
+
+.sign h1{
+    color: #6760EF;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+   
+
+}
+
+.Signbox{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+.sign .input-Sign{
+
+    position: relative;
+    width: 464;
+    height: 149;
+    background-color: rgba(103, 96, 239, 10%);
+    margin: 30px 0;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 40px;
+
+}
+.input-Sign input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    color: #908595 ;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(255,255,255,2);
+    border-radius: 15px;
+    font-size: 16px;
+    color:black;
+    padding: 20px 45px 20px 20px;
+    
+
+}
+
+.input-Sign input::placeholder{
+    color: gray;
+    
+}
+
+.input-Sign .icon{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-54%);
+    font-size: 16px;
+}
+
+.Signup{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.Signup p a{
+    color: #6760EF;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.Signup p a:hover {
+    text-decoration: underline;
+}
+
+.sign button{
+    width: 160px;
+    height: 50px;
+    justify-content: center;
+    background-color:#6760EF ;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top:20px ;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+.connect{
+    margin-top: 20px;
+    margin-left: 155px;
+    font-size: 16px;
+}
+
+
+.oauth{
+    width: 250px;
+    margin-left: 125px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.password-strength{
+    text-align: center;
+}
+
+.password-strength-bar-container {
+    width: 60%;
+    height: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    margin-left: 80px;
+    border-radius: 10px;
+    
+  }
+  
+  .password-strength-bar {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .password-strength-text {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
+  .error-message {
+    color: red;
+    font-size: small;
+    text-align: center;
+  }
