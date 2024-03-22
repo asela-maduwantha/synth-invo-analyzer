@@ -4,13 +4,13 @@ import Logo from "../../assets/logo.svg";
 
 const HeaderInside = () => {
   return (
-    <div class="header">
-      <div class="header-box">
-        <div class="logo">
+    <div className="header">
+      <div className="header-box">
+        <div className="logo">
           <img src={Logo} alt="Logo not available"></img>
         </div>
         <div class="header-btns">
-          <button type="button" class="login-btn">
+          <button type="button" className="login-btn">
             Logout
           </button>
         </div>

@@ -4,6 +4,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { GoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -103,9 +104,6 @@ const SignUp = () => {
         <div className="password-strength-bar"
           style={{ width: `${barWidth}%`, backgroundColor: getPasswordStrengthColor() }}
         />
-        {strengthText && (
-          <div className="password-strength-text">{`Password Strength:${strengthText}`}</div>
-        )}
       </div>
     );
   };
@@ -150,8 +148,9 @@ const SignUp = () => {
             *{emailError}
           </p>
         )}
-
-        <div className="Signbox">
+<div className='data-field'>
+  
+<div className="Signbox">
           <p>Password</p>
         </div>
 
@@ -165,6 +164,9 @@ const SignUp = () => {
           />
           <FaLock className='icon' /> 
         </div>
+          {renderPasswordStrengthBar()}
+          
+</div>
 
         <div className="Signbox">
           <p>Confirm Password</p>
@@ -180,20 +182,23 @@ const SignUp = () => {
           />
           <FaLock className="icon" />
         </div>
-
-        {confirmPasswordError && (
+        <div className='strenght-msg'>
+          {confirmPasswordError && (
           <p className="error-message" style={{ color: 'red', fontSize: 'small', textAlign: 'center' }}>
             *{confirmPasswordError}
           </p>
         )}
+          </div>
 
-        {renderPasswordStrengthBar()}
+       
+
+        
 
         <div className="Signup">
           <p>I agree to SynthInvo's <a href="#"> Terms Of Service</a> and <a href="#">Privacy Policy</a></p>
         </div>
-
-        <button type='submit'>Create Account</button>
+<Link to='/dashboard'>
+        <button type='submit' >Create Account</button></Link>
 
         <div className="connect">
           <p>- or connect with -</p>

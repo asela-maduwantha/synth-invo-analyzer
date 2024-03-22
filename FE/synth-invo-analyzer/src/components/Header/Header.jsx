@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div class="header">
-      <div class="header-box">
-        <div class="logo">
+    <div className="header">
+      <div className="header-box">
+        <div className="logo">
           <img src={Logo} alt="Logo not available"></img>
         </div>
-        <div class="header-btns">
+        <div className="header-btns">
           <button type="button" class="login-btn">
             Login
           </button>
-          <Link to ='/signup' type="button" class="signup-btn">
+          <Link to ='/signup' type="button" className="signup-btn">
             Signup
           </Link>
         </div>
